@@ -154,7 +154,7 @@
      link : "",
    },
   ]
- 
+
  var jsTheoryList = [
    {
      title : "Le javascript moderne: évolution et applications",
@@ -303,7 +303,7 @@ function isOdd(num) { return num % 2;}
   }
  }
  
-var buildTheory = function(list, id){
+ var buildTheory = function(list, id){
    var container = document.getElementById(id)
    list.forEach(function(item, index){
      var link = document.createElement('a')
@@ -311,6 +311,7 @@ var buildTheory = function(list, id){
      link.setAttribute('href', '#')
      container.appendChild(link)
    })
+
  }
  
  
