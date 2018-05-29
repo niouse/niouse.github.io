@@ -127,6 +127,34 @@
    },
  ]
  
+  var reactTheoryList = [
+   {
+     title : "les styles inline",
+     description : "",
+     link : "",
+   },
+    {
+     title : "Composition de composants",
+     description : "",
+     link : "",
+   },
+   {
+     title : "Utiliser react create app",
+     description : "",
+     link : "",
+   },
+    {
+     title : "les cmposants stateless et statefull",
+     description : "",
+     link : "",
+   },
+   {
+     title : "les cmposants stateless et statefull",
+     description : "",
+     link : "",
+   },
+  ]
+ 
  var jsTheoryList = [
    {
      title : "Le javascript moderne: évolution et applications",
@@ -275,7 +303,7 @@ function isOdd(num) { return num % 2;}
   }
  }
  
- var buildTheory = function(list, id){
+var buildTheory = function(list, id){
    var container = document.getElementById(id)
    list.forEach(function(item, index){
      var link = document.createElement('a')
@@ -283,7 +311,6 @@ function isOdd(num) { return num % 2;}
      link.setAttribute('href', '#')
      container.appendChild(link)
    })
-   
  }
  
  
@@ -336,4 +363,5 @@ window.onload = function(){
   buildProgramme(prog)
   buildTheory(jsTheoryList, "javascript-theory")
   buildTheory(webTheoryList, "web-theory")
+  buildTheory(reactTheoryList, "react-theory")
 }
