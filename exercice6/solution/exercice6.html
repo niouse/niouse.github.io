@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title> My super CV </title>
+  <link href="./public/styles.css" rel="stylesheet" type="text/css">
+
+    <script>
+        window.onload=function(){
+          var container= document.createElement('div')
+          var nav = document.createElement('nav')
+          var link1 = document.createElement('a')
+          var link2 = document.createElement('a')
+          var link3 = document.createElement('a')
+          var link4 = document.createElement('a')
+          var link5 = document.createElement('a')
+
+          nav.setAttribute('id', 'navigation')
+          container.setAttribute('class', 'container')
+
+          link1.innerText='ABOUT'
+          link1.setAttribute('class', "navigation-button")
+          link1.setAttribute('href', "#")
+
+          link2.innerText='EXPERENCES'
+          link2.setAttribute('class', "navigation-button")
+          link2.setAttribute('href', "#")
+
+          link3.innerText='FORMATIONS'
+          link3.setAttribute('class', "navigation-button")
+          link3.setAttribute('href', "#")
+
+          link4.innerText='SKILLS'
+          link4.setAttribute('class', "navigation-button")
+          link4.setAttribute('href', "#")
+
+          link5.innerText='CONTACT'
+          link5.setAttribute('class', "navigation-button")
+          link5.setAttribute('href', "#")
+
+          container.appendChild(nav)
+          nav.appendChild(link1)
+          nav.appendChild(link2)
+          nav.appendChild(link3)
+          nav.appendChild(link4)
+          nav.appendChild(link5)
+
+          var navContainer = document.getElementById("navigation-container")
+          navContainer.appendChild(container)
+        }
+    </script>
+  
+</head>
+  
+<body>
+  <header> 
+      <div id="navigation-container">
+        <!--<div class="container">
+          <nav id="navigation">
+            <a class="navigation-button" href="#">ABOUT</a>
+            <a class="navigation-button" href="#">EXPERIENCES</a>
+            <a class="navigation-button" href="#">FORMATIONS</a>
+            <a class="navigation-button" href="#">SKILLS</a>
+            <a class="navigation-button" href="#">CONTACT</a>
+          </nav>
+        </div>-->
+      </div>
+      <div id="banner-container" class="container">
+        <div class="center-all">
+          <div id="presentation-container" >
+            <div id="photo-container">
+            </div>
+            <div id="diamond-container">
+              <img id="diamond" src="./public/diamond.png" alt="#"/>
+            </div>
+            <div>
+              <h2 id="main-title">My name is <strong>Sebastien Pinard</strong></h2>
+              <h3>JAVASCRIPT Programmer</h3>
+              <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,nisi elit consequat ipsum,nec sagittis sem nibh id elit.Duis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="center-all arrow-container">
+          <a class="arrow" href="#"> </a>
+        </div>
+      </div>
+  </header>
+</body>
+
+</html>

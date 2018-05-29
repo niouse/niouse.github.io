@@ -1,0 +1,87 @@
+    var myCv = {
+      title : "Sébastien Pinard",
+      personalInfos : {
+          firstName : "Sébastien",
+          lastName : "Pinard",
+          birthDate : "31/08/1985",
+          email : "seba.pinard@gmail.com",
+          adress : {
+            city : "Lyon",
+            zipCode : "69007",
+            street : "rue Sébastien Gryphe",
+            streetNumber : 36
+          },
+          phone : "0783128389",
+          description : "lipsum lorem",
+          isAvailable : true,
+      },
+      experiences : [
+        {
+          startDate : "2007",
+          endDate : "2009",
+          title : "Ingénieur qui fait tout",
+          societyName : "AREVA",
+          societyLogo : false,
+          link : "#",
+          location : "Chambéry",
+          missions : [
+            "lipusm lorem laudanum",
+            "lipusm lorem laudanum",
+          ] 
+        }, 
+      ],
+      formations : [
+        {
+          startDate : "2004",
+          endDate : "2005",
+          title : "",
+        },
+        {
+          startDate : "2004",
+          endDate : "2005",
+          title : "",
+        },
+      ],
+      skills : [
+        {
+          type : "language",
+          name : "english",
+          level : 7
+        },
+        {
+          type : "language",
+          name : "french",
+          level : 10
+        },
+        {
+          type : "language",
+          name : "german",
+          level : 3
+        },
+        {
+          type : "language",
+          name : "spanish",
+          level : 2
+        },
+        {
+          type : "programmation",
+          name : "C++",
+          level : 2
+        },
+        {
+          type : "programmation",
+          name : "javascript",
+          level : 8
+        },
+        {
+          type : "programmation",
+          name : "html",
+          level : 7
+        },
+        {
+          type : "software",
+          name : "office",
+          level : 5
+        },
+      ],
+    }
