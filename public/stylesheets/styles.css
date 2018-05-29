@@ -1,0 +1,106 @@
+body {
+  font-family : Impact, Charcoal, sans-serif
+}
+
+section {
+  padding : 30px;
+}
+
+#main-container {
+  max-width : 1080px;
+  margin : auto;
+  height : 100%;
+}
+
+.warning {
+  color : red;
+}
+#navigation {
+  display : flex;
+  justify-content : flex-end;
+  align-items : center;
+  height : 70px;
+}
+
+.nav-item {
+  display:inline-block;
+  margin-left : 8px;
+  line-height : 32px;
+  width : 32px;
+  color : white;
+  background-color : #2BC704;
+  text-align: center;
+}
+
+  a:link {
+      text-decoration: none;
+  }
+
+  a:visited {
+      text-decoration: none;
+  }
+
+  a:hover {
+      text-decoration: none;
+  }
+
+  a:active {
+      text-decoration: none;
+  }
+
+
+header {
+   padding : 30px;
+   /*background-color : #9FFB88;*/
+}
+
+#presentation {
+  max-width : 800px
+}
+
+.step  {
+  height : 200px;
+  padding : 10px 20px 10px 20px;
+  display : flex;
+  flex-direction : column;
+  position : relative;
+}
+
+/*.dark {
+  background-color : #2BC704
+}
+
+.light {
+  background-color : #9FFB88
+}*/
+
+.dark button {
+  background-color : #9FFB88;
+}
+
+.light button {
+  background-color : #2BC704;
+  color : grey;
+}
+
+.go-button {
+  width : 64px;
+  height : 64px;
+  position : absolute;
+  right : 68px;
+  top : 68px
+}
+
+#program-container {
+  max-width : 900px;
+  padding-top : 30px;
+  margin : auto;
+}
+
+
+.list {
+  display : flex;
+  flex-direction:column;
+  padding : 10px;
+  font-size : 0.8em;
+}

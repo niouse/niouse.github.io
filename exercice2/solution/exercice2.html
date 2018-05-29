@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title> My super CV </title>
+    <style>
+      
+      body {
+        padding : 0;
+         margin : 0
+      }
+      
+      .container {
+        width : 70%;
+        margin : 0 auto 0 auto;
+        display : flex;
+        flex-direction : column;
+      }
+      
+      #navigation-container {
+        display : flex;
+        align-items : center;
+        width : 100%;
+        height : 50px;
+        background : rgba(0,0,0,0.3);
+      }
+      
+      #navigation {
+        display : flex;
+        justify-content : flex-end;
+      }
+      
+      .navigation-button {
+        padding : 0 5px 0 5px;
+      }
+      
+      header {
+        height : 600px;
+        display : flex;
+        flex-direction : column;
+      }
+      
+      .center-all {
+        display : flex;
+        flex-direction : column;
+        justify-content : center;
+        align-items : center;
+      }
+      
+      #presentation-container {
+        display : flex
+      }
+
+      #photo-container {
+        width : 30%;
+      }
+      
+      .flex1 {
+        flex : 1;
+      }
+      
+      .arrow-container {
+        height : 70px;
+      }
+
+      
+    </style>
+</head>
+  
+<body>
+  <header> 
+      <div id="navigation-container">
+        <div class="container">
+          <nav id="navigation">
+            <a class="navigation-button" href="#">ABOUT</a>
+            <a class="navigation-button" href="#">EXPERIENCES</a>
+            <a class="navigation-button" href="#">FORMATIONS</a>
+            <a class="navigation-button" href="#">SKILLS</a>
+            <a class="navigation-button" href="#">CONTACT</a>
+          </nav>
+        </div>
+      </div>
+      <div class="container flex1">
+        <div class="center-all flex1">
+          <div id="presentation-container" >
+            <div id="photo-container">
+            </div>
+            <div id="diamond-container">
+              <img id="diamond" src="#" alt="#"/>
+            </div>
+            <div>
+              <h1>My name is <strong>Sebastien Pinard</strong></h1>
+              <h2>Développeur Javascript</h2>
+              <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,nisi elit consequat ipsum,nec sagittis sem nibh id elit.Duis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="center-all arrow-container">
+          <img src="#"/>
+        </div>
+      </div>
+  </header>
+</body>
+
+</html>
