@@ -58,9 +58,10 @@
      ],
    },
    {
-     title : "entrainement",
+     title : "Create react app",
      objectifs : [
-        "Consolider les acquis des exercices précédents",
+        "Comprendre pourquoi il faut un boilerplate pour utiliser un framework js moderne",
+        "Apprendre les rudiments de CRA pour coder rapidement en react sans se planter",
      ],
    },
    {
@@ -303,7 +304,7 @@ function isOdd(num) { return num % 2;}
   }
  }
  
- var buildTheory = function(list, id){
+var buildTheory = function(list, id){
    var container = document.getElementById(id)
    list.forEach(function(item, index){
      var link = document.createElement('a')
@@ -311,9 +312,7 @@ function isOdd(num) { return num % 2;}
      link.setAttribute('href', '#')
      container.appendChild(link)
    })
-
  }
- 
  
 var buildStep = function(step, stepIndex){
    

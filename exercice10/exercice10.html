@@ -11,23 +11,23 @@
       <nav id="navigation">
       </nav>
      
-       <h1>Exercice 10</h1>
-    
-      <h3>Objectifs</h3>
+    <h1>Exercice 10 : html vers jsx</h1>
 
-       <ul>
-        <li>Manier les boucles pour automatiser la création d'éléments</li>
-        <li>Utiliser des fonctions pour diviser le code</li>    
-       </ul>
+    <h3>Objectifs</h3>
+
+     <ul>
+      <li>Se familiariser avec l'ecriture jsx</li>
+      <li>connaitre les différences entre le jsx et le html</li> 
+      <li>ecrire son premier composant react</li>
+     </ul>
      
     <h3>Ennoncé</h3>
-     <p>Intégrer le code précédent dans une fonction qui construit la barre de navigation à partir de deux arguments : l’id du container et un tableau d’objets {text, link}. Utiliser les boucles et la méthodes forEach<p>
+     <p>Ecrire un composant react stateless, cad un simple fonction, <p>
      <p>
          Améliorer la fonction en ajoutant la vérification des arguments
      </p>
 
           <h3>Tips</h3>
-     
     <button id="show-aide"> Voir l'aide </button>
     <button id="show-solution"> Voir la solution </button>
     
@@ -35,6 +35,44 @@
         <p>
             Aide
         </p>
+      
+      <h3>Simple fonction ou composant react ?</h3>
+      
+      <p>Pour créer un composant react, une simple fonction suffit : </p>
+      
+      <code>
+        const MyComponent = function(){
+         return (
+            <div> My super component</div>
+          )
+        }
+      </code>
+      
+     <p>Et oui, on peut renvoyer directement du "html", enfin quelquechose qui ressemble à du html et ensuite réutiliser MyComponent comme une balise html : </p> 
+      
+      <code>
+        <MyComponent />
+      </code>
+      
+      <p>
+        Pour que cela fonctionne, il y a un prérequis : il faut que l'objet "react" (contenant une partie de l'api react) soit dans le scope de la fonction. La raison est très simple, la notation "<MyComponent />" est une autre représentation du javascript. Cela ressemble à du html mais cela représente une instruction en javascript, en effet, les deux lignes suivante sont parfaitement interchangeables dans du jsx:
+      </p> 
+      
+      <code>
+        MyComponent
+      </code>
+      <p>et</p>
+      <code>
+      React.createElement(MyComponent)
+      </code>
+      
+      Il suffit donc d'importer react au début du fichier :
+      
+      <code>
+        import react from "react"
+      </code>
+      
+      
     </div>
     </div>
 
